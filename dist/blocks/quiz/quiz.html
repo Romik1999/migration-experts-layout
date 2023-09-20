@@ -1,58 +1,160 @@
 <section class="quiz">
     <div class="cont">
-        <div class="quiz__step">
-            <div class="quiz-step">
-
-<!--                sectionTitleClass: 'quiz-step__title',-->
-<!--                sectionTitleAlignClass:'section-title&#45;&#45;center',-->
-<!--                sectionTitleText: 'Гражданином какой страны Вы являетесь?',-->
-<!--                sectionTitleColorClass: 'section-title&#45;&#45;dark'-->
-<!--                } )-->
-                <div class="quiz-step__items">
-                    <label class="quiz-step__item">
-                        <input type="radio" name="quiz" class="quiz-step__input">
-                        <span class="quiz-step__text">Украина</span>
-                    </label>
-                    <label class="quiz-step__item">
-                        <input type="radio" name="quiz" class="quiz-step__input">
-                        <span class="quiz-step__text">Беларусь</span>
-                    </label>
-                    <label class="quiz-step__item">
-                        <input type="radio" name="quiz" class="quiz-step__input">
-                        <span class="quiz-step__text">Молдова</span>
-                    </label>
-                    <label class="quiz-step__item">
-                        <input type="radio" name="quiz" class="quiz-step__input">
-                        <span class="quiz-step__text">Казахстан</span>
-                    </label>
-                    <label class="quiz-step__item">
-                        <input type="radio" name="quiz" class="quiz-step__input">
-                        <span class="quiz-step__text">Узбекистан</span>
-                    </label>
-                    <label class="quiz-step__item">
-                        <input type="radio" name="quiz" class="quiz-step__input">
-                        <span class="quiz-step__text">Киргизия</span>
-                    </label>
-                    <label class="quiz-step__item">
-                        <input type="radio" name="quiz" class="quiz-step__input">
-                        <span class="quiz-step__text">Таджикистан</span>
-                    </label>
-                    <label class="quiz-step__item">
-                        <input type="radio" name="quiz" class="quiz-step__input">
-                        <span class="quiz-step__text">Армения</span>
-                    </label>
-                    <label class="quiz-step__item">
-                        <input type="radio" name="quiz" class="quiz-step__input">
-                        <span class="quiz-step__text">Азербайджан</span>
-                    </label>
-                    <label class="quiz-step__item">
-                        <input type="radio" name="quiz" class="quiz-step__input">
-                        <span class="quiz-step__text">Другие страны</span>
-                    </label>
+        <div class="quiz__steps">
+            <div class="quiz__step">
+                <div class="quiz-step">
+                    <div class="quiz-step__number">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="78" viewBox="0 0 41 78" fill="none">
+                            <path d="M22.0082 0H41V78H18.6567V23.2886L5.13896 26.52L0 7.91143L22.0082 0Z" fill="#9A8C98" fill-opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="quiz-step__title">Гражданином какой страны вы являетесь?</div>
+                    <div class="quiz-step__items">
+                        <label class="quiz-step__item">
+                            <input class="quiz-step__input" type="text" placeholder="Ведите вашу страну">
+                        </label>
+                    </div>
                 </div>
-                <div class="quiz-step__buttons">
-                    <div class="quiz-step__button quiz-step__button--prev btn btn--border">Назад</div>
-                    <a class="quiz-step__button quiz-step__button--next btn btn--red" href="./last-step.html">Далее</a>
+            </div>
+
+            <div class="quiz__step">
+                <div class="quiz-step">
+                    <div class="quiz-step__number">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="58" height="79" viewBox="0 0 58 79" fill="none">
+                            <path d="M1.66987 79V62.8911L27.0518 35.6383C27.4971 35.1234 28.128 34.4246 28.9443 33.5419C29.8349 32.6592 30.4287 32.034 30.7255 31.6662C31.0966 31.2984 31.5419 30.8203 32.0614 30.2318C32.6552 29.5698 33.0262 29.0549 33.1747 28.6872C33.3973 28.2458 33.5829 27.8045 33.7313 27.3631C33.9539 26.8482 34.0653 26.3333 34.0653 25.8184C34.0653 24.568 33.62 23.5382 32.7294 22.729C31.8388 21.8464 30.54 21.405 28.833 21.405C24.6769 21.405 21.5969 24.0163 19.5931 29.2388L0 18.6466C2.59757 12.5414 6.41971 7.90735 11.4664 4.74441C16.5873 1.58147 22.2649 0 28.499 0C36.1433 0 42.6743 2.16993 48.0921 6.50978C53.5841 10.7761 56.3301 16.6974 56.3301 24.2737C56.3301 28.9078 55.2911 32.9534 53.213 36.4106C51.2092 39.8678 48.0179 44.0237 43.6392 48.8785L35.7351 57.595H58V79H1.66987Z" fill="#9A8C98" fill-opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="quiz-step__title">В каком регионе Вы находитесь?</div>
+                    <div class="quiz-step__items">
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Москва</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Московская область</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Другой регион</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="quiz__step">
+                <div class="quiz-step">
+                    <div class="quiz-step__number">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="63" height="87" viewBox="0 0 63 87" fill="none">
+                            <path d="M44.9481 34.7514C50.4404 36.3715 54.8019 39.2067 58.0327 43.257C61.3442 47.2263 63 52.2486 63 58.324C63 67.7207 60.0115 74.8492 54.0346 79.7095C48.0577 84.5698 40.5462 87 31.5 87C24.0692 87 17.5673 85.2989 11.9942 81.8967C6.42115 78.4944 2.42308 73.4721 0 66.8296L21.3231 54.5573C23.0192 60.4707 26.4115 63.4274 31.5 63.4274C33.6808 63.4274 35.4173 62.8603 36.7096 61.7263C38.0827 60.5922 38.7692 59.0531 38.7692 57.1089C38.7692 53.0587 36.3462 51.0335 31.5 51.0335H26.2904L16.8404 36.9385L28.2288 23.5726H2.66538V0H58.3962V18.7123L44.9481 34.7514Z" fill="#9A8C98" fill-opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="quiz-step__title">Введите ваш возраст</div>
+                    <div class="quiz-step__items">
+                        <label class="quiz-step__item">
+                            <input class="quiz-step__input" type="text" placeholder="Ваш возраст">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="quiz__step">
+                <div class="quiz-step">
+                    <div class="quiz-step__number">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="63" height="77" viewBox="0 0 63 77" fill="none">
+                            <path d="M63 45.98V65.78H55.125V77H33.075V65.78H0V45.98L21.7125 0H47.25L25.2 45.98H33.075V35.2H55.125V45.98H63Z" fill="#9A8C98" fill-opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="quiz-step__title">Сколько лет проживаете на территории РФ?</div>
+                    <div class="quiz-step__items">
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">До 6 месяцев</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">От 6 до 12 месяцев</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">1-3 года</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">3-5 лет</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Более 5 лет</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="quiz__step">
+                <div class="quiz-step">
+                    <div class="quiz-step__number">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="59" height="79" viewBox="0 0 59 79" fill="none">
+                            <path d="M32.283 27.0321C40.0013 27.0321 46.3836 29.202 51.4302 33.5419C56.4767 37.8082 59 43.987 59 52.0782C59 60.6844 56.2541 67.3412 50.7623 72.0489C45.2704 76.683 38.3686 79 30.0566 79C22.7094 79 16.4013 77.4553 11.1321 74.3659C5.93711 71.2765 2.22641 66.716 0 60.6844L19.5925 49.5405C21.1509 54.9101 24.639 57.595 30.0566 57.595C32.0604 57.595 33.656 57.1168 34.8434 56.1606C36.105 55.2044 36.7358 53.8068 36.7358 51.9679C36.7358 48.3636 34.5094 46.5614 30.0566 46.5614H4.45283L7.68113 0H54.5472V21.405H28.0528L27.6075 27.0321H32.283Z" fill="#9A8C98" fill-opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="quiz-step__title">Какой вид документов вам нужен?</div>
+                    <div class="quiz-step__items">
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Гражданство РФ</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">РВП</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">ВНЖ</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Патент</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Другой вопрос по миграции</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="quiz__step">
+                <div class="quiz-step">
+                    <div class="quiz-step__number">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" viewBox="0 0 60 80" fill="none">
+                            <path d="M36.3333 25.2514C43.5926 26.4432 49.3333 29.4972 53.5556 34.4134C57.8519 39.2551 60 45.2514 60 52.4022C60 60.5959 57.2593 67.2626 51.7778 72.4022C46.2963 77.4674 39.037 80 30 80C20.8889 80 13.5926 77.4674 8.11111 72.4022C2.7037 67.2626 0 60.5959 0 52.4022C0 46.5922 1.40741 41.527 4.22222 37.2067L27.3333 0H52.2222L36.3333 25.2514ZM22.2222 52.4022C22.2222 57.4674 24.8148 60 30 60C35.1852 60 37.7778 57.4674 37.7778 52.4022C37.7778 47.3371 35.1852 44.8045 30 44.8045C24.8148 44.8045 22.2222 47.3371 22.2222 52.4022Z" fill="#9A8C98" fill-opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="quiz-step__title">Есть ли у вас близкие родственники, являющиеся гражданами РФ?</div>
+                    <div class="quiz-step__items">
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Да, муж/жена</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Да, родители</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Да, другие родственники</span>
+                        </label>
+                        <label class="quiz-step__item">
+                            <input type="radio" name="quiz" class="quiz-step__radio">
+                            <span class="quiz-step__text">Нет</span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
