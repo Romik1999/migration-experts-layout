@@ -1,0 +1,115 @@
+@import "../../scss/colors.scss";
+
+.quiz {
+  height: calc(100vh - 210px);
+  max-height: 1000px;
+  min-height: 600px;
+  padding: 40px 30px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 769px) {
+    padding: 40px 15px;
+    min-height: unset;
+    max-height: unset;
+    height: unset;
+  }
+
+  &-step {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    &__title {
+      text-transform: none;
+      margin-bottom: 0;
+    }
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 20px;
+      row-gap: 25px;
+
+      @media screen and (max-width: 1025px) {
+        column-gap: 15px;
+        row-gap: 15px;
+      }
+    }
+
+    &__item {
+      position: relative;
+      display: flex;
+      width: calc(25% - 15px);
+      cursor: pointer;
+
+      @media screen and (max-width: 1025px) {
+        width: calc(33% - 10px);
+      }
+      @media screen and (max-width: 769px) {
+        width: calc(50% - 7.5px);
+      }
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
+    }
+
+    &__input {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+
+      &:checked ~ .quiz-step__text {
+        color: $red;
+        font-weight: 700;
+      }
+    }
+
+    &__text {
+      height: 60px;
+      background-color: $white;
+      border-radius: 10px;
+
+      color: #001749;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 120%;
+      padding: 20px;
+      box-sizing: border-box;
+      width: 100%;
+
+      @media screen and (max-width: 1025px) {
+        height: 55px;
+        padding: 16px 20px;
+      }
+      @media screen and (max-width: 769px) {
+        height: 50px;
+        font-size: 15px;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 20px;
+
+      @media screen and (max-width: 576px) {
+       flex-direction: column-reverse;
+        row-gap: 20px;
+      }
+    }
+
+    &__button {
+      max-width: 250px;
+
+      @media screen and (max-width: 576px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+
+  }
+}

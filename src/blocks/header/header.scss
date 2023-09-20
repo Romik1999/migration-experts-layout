@@ -1,0 +1,85 @@
+@import "../../scss/colors.scss";
+
+.header {
+  position: relative;
+  background-color: $white;
+  padding: 0 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(77, 56, 49, 0.10);
+
+  @media screen and (max-width: 769px) {
+    padding: 0 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    padding: 15px 0;
+
+    @media screen and (max-width: 1025px) {
+      padding: 8px 0;
+    }
+    @media screen and (max-width: 769px) {
+      column-gap: 15px;
+      padding: 15px 0;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    max-width: 400px;
+
+    @media screen and (max-width: 1441px) {
+      max-width: 370px;
+    }
+    @media screen and (max-width: 1025px) {
+      max-width: 320px;
+    }
+    @media screen and (max-width: 769px) {
+      font-size: 0;
+      max-width: fit-content;
+      border-radius: 0;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      height: auto;
+    }
+
+    & svg,
+    & img {
+      display: none;
+
+      @media screen and (max-width: 769px) {
+        display: block;
+      }
+    }
+  }
+
+  &__logo {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 120%;
+
+    & span{
+      &:nth-child(1){
+        color: $grey;
+      }
+      &:nth-child(2){
+        color: $red;
+      }
+    }
+
+    @media screen and (max-width: 1441px) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 1025px) {
+      font-size: 28px;
+    }
+    @media screen and (max-width: 769px) {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,233 @@
+.hero {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.hero__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.hero__info {
+  max-width: 831px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 46px;
+}
+
+.hero__image {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 43%;
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+}
+
+.hero__image img,
+.hero__image svg {
+  width: 100%;
+  height: auto;
+}
+
+.hero__subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.hero__subtitle span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__subtitle span:nth-child(1) {
+  color: #4D3831;
+}
+
+.hero__subtitle span:nth-child(2) {
+  color: #B61E1E;
+}
+
+.hero__title {
+  color: #4D3831;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+.hero__notice {
+  color: #B61E1E;
+  font-size: 24px;
+}
+
+.hero__notice span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__notice span:nth-child(1) {
+  font-weight: 900;
+}
+
+.hero__notice span:nth-child(2) {
+  font-weight: 500;
+}
+
+.hero__button {
+  max-width: 300px;
+}
+
+@media screen and (max-width: 1441px) {
+  .hero__wrapper {
+    padding-bottom: 60px;
+  }
+
+  .hero__info {
+    max-width: 580px;
+    row-gap: 35px;
+  }
+
+  .hero__subtitle {
+    font-size: 22px;
+  }
+
+  .hero__title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .hero__info {
+    max-width: 440px;
+    row-gap: 25px;
+  }
+
+  .hero__subtitle {
+    font-size: 20px;
+  }
+
+  .hero__title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .hero {
+    padding: 0 15px;
+  }
+
+  .hero__wrapper {
+    padding-top: 30px;
+    padding-bottom: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .hero__info {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 0;
+  }
+
+  .hero__image {
+    position: unset;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    max-width: 400px;
+  }
+
+  .hero__subtitle {
+    font-size: 16px;
+    text-align: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 40px;
+  }
+
+  .hero__subtitle span {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 30px;
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 25px;
+  }
+
+  .hero__notice {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .hero__notice span {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .hero__button {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-bottom: 25px;
+  }
+}

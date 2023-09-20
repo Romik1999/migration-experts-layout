@@ -1,0 +1,53 @@
+@import "../../scss/colors.scss";
+
+.thanks {
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+
+    @media screen and (max-width: 1441px) {
+    }
+    @media screen and (max-width: 992px) {
+      top: 30px;
+      right: 30px;
+    }
+    @media screen and (max-width: 769px) {
+      position: unset;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+  }
+
+  &__notice {
+    color: #001749;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+
+
+    @media screen and (max-width: 1441px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 1025px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+}

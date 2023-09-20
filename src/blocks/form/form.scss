@@ -1,0 +1,62 @@
+@import "../../scss/colors.scss";
+
+.form {
+  &__wrapper {
+    display: flex;
+    column-gap: 20px;
+
+    @media screen and (max-width: 1025px) {
+      column-gap: 10px;
+    }
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+
+  &__field {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 18px 23px;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 120%;
+
+    border-radius: 10px;
+    border: 1px solid #BDBDBD;
+    transition: 0.2s;
+
+    @media screen and (max-width: 1025px) {
+      height: 55px;
+      padding: 18px;
+      border-radius: 7px;
+      font-size: 16px;
+    }
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 120%;
+      color: #BDBDBD;
+
+      @media screen and (max-width: 1025px) {
+        font-size: 16px;
+      }
+    }
+
+    &:focus {
+      outline: none;}
+  }
+
+  &__submit {
+
+  }
+}
