@@ -1,59 +1,89 @@
 .thanks__wrapper {
   position: relative;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: rgba(201, 173, 167, 0.5);
+  padding: 50px;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .thanks__close {
   position: absolute;
   top: 40px;
-  right: 60px;
-  width: 30px;
-  height: 30px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
 }
 
-.thanks__subtitle {
-  margin-bottom: 50px;
+.thanks__title {
+  color: #B61E1E;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  /* 38.4px */
+  margin-bottom: 30px;
 }
 
-.thanks__notice {
-  color: #001749;
-  font-size: 30px;
+.thanks__subtitle {
+  color: #4D3831;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  text-align: center;
 }
 
 @media screen and (max-width: 1441px) {
-  .thanks__notice {
-    font-size: 25px;
+  .thanks__title {
+    font-size: 28px;
   }
 }
 
 @media screen and (max-width: 1025px) {
-  .thanks__notice {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .thanks__close {
-    top: 30px;
-    right: 30px;
+  .thanks__title {
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 769px) {
-  .thanks__close {
-    position: unset;
-    margin-bottom: 40px;
+  .thanks__wrapper {
+    min-height: 400px;
+    padding: 50px 15px;
   }
-}
 
-@media screen and (max-width: 576px) {
-  .thanks__notice {
+  .thanks__close {
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .thanks__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .thanks__subtitle {
     font-size: 16px;
   }
 }
