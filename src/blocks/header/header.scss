@@ -39,12 +39,15 @@
     }
     @media screen and (max-width: 769px) {
       font-size: 0;
-      max-width: fit-content;
-      border-radius: 0;
-      background-color: transparent;
-      border: none;
+      width: 64px;
+      height: 64px;
       padding: 0;
-      height: auto;
+      border-radius: 5px;
+
+      position: fixed;
+      bottom: 20px;
+      right: 15px;
+      z-index: 99;
     }
 
     & svg,
@@ -53,6 +56,19 @@
 
       @media screen and (max-width: 769px) {
         display: block;
+        width: 33px;
+        height: 33px;
+        fill: $white;
+      }
+    }
+
+    &:hover {
+
+      @media screen and (max-width: 769px) {
+        background: $white;
+      }
+      & svg {
+        fill: $red;
       }
     }
   }
@@ -62,11 +78,12 @@
     font-weight: 900;
     line-height: 120%;
 
-    & span{
-      &:nth-child(1){
+    & span {
+      &:nth-child(1) {
         color: $grey;
       }
-      &:nth-child(2){
+
+      &:nth-child(2) {
         color: $red;
       }
     }

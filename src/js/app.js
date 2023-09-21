@@ -49,4 +49,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     modal('.modal', 'modal--active', '[data-modal]', '.modal__close');
+
+    let hrefs = document.querySelectorAll('.js-scroller')
+    if (hrefs) {
+        hrefs.forEach(href => {
+            href.addEventListener('click', function(e) {
+                e.preventDefault();
+                let id = this.getAttribute('href').slice(1)
+                let scrollTarget = document.getElementById(id);
+                let topOffset = 0;
+                let elementPosition = scrollTarget.getBoundingClientRect().top;
+                let offsetPosition = elementPosition - topOffset;
+                window.scrollBy({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            })
+        });
+    }
 });

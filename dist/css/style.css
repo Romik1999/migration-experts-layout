@@ -178,6 +178,10 @@ main {
   display: none;
 }
 
+.header__button:hover svg {
+  fill: #B61E1E;
+}
+
 .header__logo {
   font-size: 36px;
   font-weight: 900;
@@ -1106,19 +1110,26 @@ main {
 
   .header__button {
     font-size: 0;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    border-radius: 0;
-    background-color: transparent;
-    border: none;
+    width: 64px;
+    height: 64px;
     padding: 0;
-    height: auto;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 99;
   }
 
   .header__button svg,
   .header__button img {
     display: block;
+    width: 33px;
+    height: 33px;
+    fill: #ffffff;
+  }
+
+  .header__button:hover {
+    background: #ffffff;
   }
 
   .header__logo {
